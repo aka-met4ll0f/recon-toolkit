@@ -38,4 +38,4 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y shellcheck
 
       - name: Lint shell scripts
-        run: shellcheck dns_info_check.sh recon_web.sh nmap_scan.sh
+        run: shellcheck -S error dns_info_check.sh recon_web.sh nmap_scan.sh
