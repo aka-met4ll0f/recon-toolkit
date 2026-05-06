@@ -1,6 +1,6 @@
-# osint-recon-toolkit
+# recon-toolkit
 
-![CI](https://github.com/aka-met4ll0f/osint-recon-toolkit/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/aka-met4ll0f/recon-toolkit/actions/workflows/ci.yml/badge.svg)
 
 Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
 
