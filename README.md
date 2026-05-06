@@ -2,12 +2,14 @@
 
 ![CI](https://github.com/aka-met4ll0f/recon-toolkit/actions/workflows/ci.yml/badge.svg)
 
+## Descripción
 Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
 
+## Autor
 - Autor: **met4ll0f**
 - GitHub: `https://github.com/aka-met4ll0f`
 
-## Scripts
+## Scripts incluidos
 - `dns_info_check.sh`: consultas DNS en paralelo y resumen CSV.
 - `whatweb_scan.py`: detección de tecnologías web y exportación a Excel.
 - `ffuf_fuzzer.py`: fuzzing de rutas con FFUF y resumen de rutas 200.
@@ -21,7 +23,7 @@ Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
 - `parallel`, `dig`, `curl`, `whatweb`, `ffuf`, `nmap`
 - Dependencias Python: `pip install -r requirements.txt`
 
-## Uso paso a paso
+## Uso
 1. Instala dependencias Python:
    - `pip install -r requirements.txt`
 2. Prepara tus listas (`urls.txt`, `dominios.txt`) según el script.
@@ -35,5 +37,5 @@ Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
    - `python3 nmap_batch_html_excel.py <archivo.xml|directorio>`
 4. Revisa resultados en carpetas de salida y archivos `.xlsx`, `.csv` y `.html`.
 
-## Disclaimer
+## Aviso legal
 Usar solo con autorización del dueño del objetivo o en laboratorio/CTF. El creador no se hace responsable por el uso indebido.
