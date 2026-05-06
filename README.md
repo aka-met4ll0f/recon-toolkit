@@ -9,10 +9,10 @@ Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
 
 ## Scripts
 - `dns_info_check.sh`: consultas DNS en paralelo y resumen CSV.
-- `whatweb_scan.py`: deteccion de tecnologias web y exportacion a Excel.
+- `whatweb_scan.py`: detección de tecnologías web y exportación a Excel.
 - `ffuf_fuzzer.py`: fuzzing de rutas con FFUF y resumen de rutas 200.
-- `recon_web.sh`: pipeline rapido con `whatweb`, `nuclei` y `feroxbuster`.
-- `subdomains_onprem_cloud.py`: clasificacion Cloud/On-premise con enriquecimiento IP.
+- `recon_web.sh`: pipeline rápido con `whatweb`, `nuclei` y `feroxbuster`.
+- `subdomains_onprem_cloud.py`: clasificación Cloud/On-premise con enriquecimiento IP.
 - `nmap_scan.sh`: escaneo Nmap batch de dominios activos.
 - `nmap_batch_html_excel.py`: convierte XML de Nmap a reportes HTML/XLSX.
 
@@ -24,7 +24,7 @@ Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
 ## Uso paso a paso
 1. Instala dependencias Python:
    - `pip install -r requirements.txt`
-2. Prepara tus listas (`urls.txt`, `dominios.txt`) segun el script.
+2. Prepara tus listas (`urls.txt`, `dominios.txt`) según el script.
 3. Ejecuta los scripts que necesites:
    - `bash dns_info_check.sh`
    - `python3 whatweb_scan.py`
@@ -33,7 +33,7 @@ Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
    - `python3 subdomains_onprem_cloud.py`
    - `bash nmap_scan.sh`
    - `python3 nmap_batch_html_excel.py <archivo.xml|directorio>`
-4. Revisa resultados en carpetas de salida y archivos `.xlsx/.csv/.html`.
+4. Revisa resultados en carpetas de salida y archivos `.xlsx`, `.csv` y `.html`.
 
 ## Disclaimer
-Usar solo con autorizacion del duenio del objetivo o en laboratorio/CTF. El creador no se hace responsable por el uso indebido.
+Usar solo con autorización del dueño del objetivo o en laboratorio/CTF. El creador no se hace responsable por el uso indebido.
