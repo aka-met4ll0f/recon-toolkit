@@ -2,7 +2,19 @@
 set -euo pipefail
 
 # DISCLAIMER: uso autorizado únicamente.
-# Autor: met4ll0f | https://github.com/met4ll0f
+# Autor: met4ll0f | https://github.com/aka-met4ll0f
+
+print_banner() {
+  cat <<'EOF'
+ _   _ __  __    _    ____    ____   ____    _    _   _
+| \ | |  \/  |  / \  |  _ \  / ___| / ___|  / \  | \ | |
+|  \| | |\/| | / _ \ | |_) | \___ \| |     / _ \ |  \| |
+| |\  | |  | |/ ___ \|  __/   ___) | |___ / ___ \| |\  |
+|_| \_|_|  |_/_/   \_\_|     |____/ \____/_/   \_\_| \_|
+EOF
+}
+
+print_banner
 
 INPUT="urls.txt"
 OUTPUT_DIR="nmap_results"

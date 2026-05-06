@@ -2,7 +2,19 @@
 set -euo pipefail
 
 # DISCLAIMER: uso autorizado únicamente.
-# Autor: met4ll0f | https://github.com/met4ll0f
+# Autor: met4ll0f | https://github.com/aka-met4ll0f
+
+print_banner() {
+  cat <<'EOF'
+ ____  _   _ ____    ___ _   _ _____ ___
+|  _ \| \ | / ___|  |_ _| \ | |  ___/ _ \
+| | | |  \| \___ \   | ||  \| | |_ | | | |
+| |_| | |\  |___) |  | || |\  |  _|| |_| |
+|____/|_| \_|____/  |___|_| \_|_|   \___/
+EOF
+}
+
+print_banner
 
 read -r -p "Ingrese el archivo con lista de dominios: " input
 output="dns_results"

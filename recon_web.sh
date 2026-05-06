@@ -2,7 +2,19 @@
 set -euo pipefail
 
 # DISCLAIMER: solo para auditoría autorizada.
-# Autor: met4ll0f | https://github.com/met4ll0f
+# Autor: met4ll0f | https://github.com/aka-met4ll0f
+
+print_banner() {
+  cat <<'EOF'
+ ____  _____ ____ ___  _   _  __        _______ ____
+|  _ \| ____/ ___/ _ \| \ | | \ \      / / ____| __ )
+| |_) |  _|| |  | | | |  \| |  \ \ /\ / /|  _| |  _ \
+|  _ <| |__| |__| |_| | |\  |   \ V  V / | |___| |_) |
+|_| \_\_____\____\___/|_| \_|    \_/\_/  |_____|____/
+EOF
+}
+
+print_banner
 
 input="urls.txt"
 output="web_recon"

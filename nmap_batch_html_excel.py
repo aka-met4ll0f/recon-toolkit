@@ -5,6 +5,15 @@ from pathlib import Path
 from openpyxl import Workbook
 
 
+BANNER = r"""
+ _   _ __  __    _    ____    ____  _____ ____   ___  ____ _____
+| \ | |  \/  |  / \  |  _ \  |  _ \| ____|  _ \ / _ \|  _ \_   _|
+|  \| | |\/| | / _ \ | |_) | | |_) |  _| | |_) | | | | |_) || |
+| |\  | |  | |/ ___ \|  __/  |  _ <| |___|  __/| |_| |  _ < | |
+|_| \_|_|  |_/_/   \_\_|     |_| \_\_____|_|    \___/|_| \_\|_|
+"""
+
+
 def process_xml(xml_path: Path):
     out_dir = Path(f"{xml_path.stem}_output")
     out_dir.mkdir(exist_ok=True)
@@ -35,8 +44,9 @@ def process_xml(xml_path: Path):
 
 
 def main():
+    print(BANNER)
     print("[DISCLAIMER] Solo para análisis autorizado.")
-    print("Autor: met4ll0f | https://github.com/met4ll0f")
+    print("Autor: met4ll0f | https://github.com/aka-met4ll0f")
     if len(sys.argv) != 2:
         print("Uso: python nmap_batch_html_excel.py <archivo.xml|directorio>")
         sys.exit(1)

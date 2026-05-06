@@ -11,6 +11,14 @@ SHODAN_API_KEY = "${SHODAN_API_KEY}"
 DOMINIOS_TXT = "dominios.txt"
 CLOUD_KEYWORDS = ["amazon", "aws", "google", "cloud", "azure", "digitalocean", "oracle", "microsoft", "linode", "gcp", "cloudflare", "fastly", "alibaba"]
 
+BANNER = r"""
+ ____  _   _ ____  ____   ___  __  __    _    ___ _   _ ____
+/ ___|| | | | __ )|  _ \ / _ \|  \/  |  / \  |_ _| \ | / ___|
+\___ \| | | |  _ \| | | | | | | |\/| | / _ \  | ||  \| \___ \
+ ___) | |_| | |_) | |_| | |_| | |  | |/ ___ \ | || |\  |___) |
+|____/ \___/|____/|____/ \___/|_|  |_/_/   \_\___|_| \_|____/
+"""
+
 
 def resolve_dns(domain, record_type):
     try:
@@ -54,8 +62,9 @@ def export_to_excel(results, filename="resultados_dominios.xlsx"):
 
 
 def main():
+    print(BANNER)
     print("[DISCLAIMER] Uso autorizado únicamente.")
-    print("Autor: met4ll0f | https://github.com/met4ll0f")
+    print("Autor: met4ll0f | https://github.com/aka-met4ll0f")
     domains = load_domains(DOMINIOS_TXT)
     results = []
     for domain in domains:

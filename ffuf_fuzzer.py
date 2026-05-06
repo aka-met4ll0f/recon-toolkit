@@ -6,6 +6,15 @@ import pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 
 
+BANNER = r"""
+ _____ _____ _   _ _____   _____ _   _ ______ ______ ______ ____
+|  ___|  ___| | | |  ___| |  ___| | | |___  /|___  /|  ____|  _ \
+| |_  | |_  | | | | |_    | |_  | | | |  / /    / / | |__  | |_) |
+|  _| |  _| | |_| |  _|   |  _| | |_| | / /    / /  |  __| |  _ <
+|_|   |_|    \___/|_|     |_|    \___/ /_/    /_/   |_|    |_| \_\
+"""
+
+
 def run_ffuf(url, wordlist, output_dir):
     output_file = os.path.join(output_dir, f"{url.replace('/', '_')}.json")
     command = ["ffuf", "-u", f"http://{url}/FUZZ", "-w", wordlist, "-mc", "200", "-o", output_file, "-of", "json"]
@@ -28,8 +37,9 @@ def parse_results(output_file):
 
 
 def main():
+    print(BANNER)
     print("[DISCLAIMER] Solo para pentest autorizado.")
-    print("Autor: met4ll0f | https://github.com/met4ll0f")
+    print("Autor: met4ll0f | https://github.com/aka-met4ll0f")
     url_file = input("Ruta del archivo con URLs: ").strip()
     wordlist = input("Ruta del diccionario: ").strip()
     output_dir = "ffuf_results"

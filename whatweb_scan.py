@@ -5,13 +5,23 @@ import subprocess
 import re
 
 
+BANNER = r"""
+__        ___   _    _  _____        ________ ____    ____   ____    _    _   _
+\ \      / / | | |  / \|_   _|      / / ____| __ )  / ___| / ___|  / \  | \ | |
+ \ \ /\ / /| |_| | / _ \ | |       / /|  _| |  _ \  \___ \| |     / _ \ |  \| |
+  \ V  V / |  _  |/ ___ \| |      / / | |___| |_) |  ___) | |___ / ___ \| |\  |
+   \_/\_/  |_| |_/_/   \_\_|     /_/  |_____|____/  |____/ \____/_/   \_\_| \_|
+"""
+
+
 def clean_name(name: str) -> str:
     return re.sub(r"[^a-zA-Z0-9_-]", "_", name)
 
 
 def main():
+    print(BANNER)
     print("[DISCLAIMER] Uso autorizado únicamente.")
-    print("Autor: met4ll0f | https://github.com/met4ll0f")
+    print("Autor: met4ll0f | https://github.com/aka-met4ll0f")
     input_file = input("Archivo con URLs sin protocolo: ").strip()
     if not os.path.isfile(input_file):
         print(f"[!] No existe: {input_file}")
