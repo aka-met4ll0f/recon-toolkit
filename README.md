@@ -1,13 +1,10 @@
 # recon-toolkit
 
 ![CI](https://github.com/aka-met4ll0f/recon-toolkit/actions/workflows/ci.yml/badge.svg)
+![Tipo](https://img.shields.io/badge/Tipo-Recon-green)
 
 ## Descripción
 Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
-
-## Autor
-- Autor: **met4ll0f**
-- GitHub: `https://github.com/aka-met4ll0f`
 
 ## Scripts incluidos
 - `dns_info_check.sh`: consultas DNS en paralelo y resumen CSV.
@@ -47,6 +44,10 @@ Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
    - `bash nmap_scan.sh`
    - `python3 nmap_batch_html_excel.py <archivo.xml|directorio>`
 4. Revisa resultados en carpetas de salida y archivos `.xlsx`, `.csv` y `.html`.
+
+## Autor
+- Autor: **met4ll0f**
+- GitHub: `https://github.com/aka-met4ll0f`
 
 ## Aviso legal
 Usar solo con autorización del dueño del objetivo o en laboratorio/CTF. El creador no se hace responsable por el uso indebido.
