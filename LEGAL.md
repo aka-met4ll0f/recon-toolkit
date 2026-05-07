@@ -1,11 +1,11 @@
 # Legal Disclaimer
 
-Proyecto orientado a reconocimiento autorizado y seguridad defensiva.
+This project is focused on authorized reconnaissance and defensive security.
 
-- Solo debe ejecutarse con autorizacion expresa del propietario del objetivo.
-- Tambien puede ejecutarse en laboratorios propios, CTFs o entornos academicos controlados.
-- Queda prohibido usar estas herramientas para intrusion, dano o recoleccion de datos sin permiso.
-- El creador (**met4ll0f**) no se hace responsable por el uso indebido ni por sus consecuencias legales.
+- Run only with explicit authorization from the target owner.
+- It can also be used in personal labs, CTFs, or controlled academic environments.
+- Using these tools for intrusion, damage, or unauthorized data collection is prohibited.
+- The creator (**met4ll0f**) is not responsible for misuse or legal consequences.
 
-Autor: **met4ll0f**  
+Author: **met4ll0f**  
 GitHub: `https://github.com/aka-met4ll0f`

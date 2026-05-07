@@ -1,53 +1,53 @@
 # recon-toolkit
 
 ![CI](https://github.com/aka-met4ll0f/recon-toolkit/actions/workflows/ci.yml/badge.svg)
-![Tipo](https://img.shields.io/badge/Tipo-Recon-green)
+![Type](https://img.shields.io/badge/Type-Recon-green)
 
-## Descripción
-Toolkit para reconocimiento web, DNS y enriquecimiento técnico.
+## Description
+Toolkit for web recon, DNS checks, and technical enrichment.
 
-## Scripts incluidos
-- `dns_info_check.sh`: consultas DNS en paralelo y resumen CSV.
-- `whatweb_scan.py`: detección de tecnologías web y exportación a Excel.
-- `ffuf_fuzzer.py`: fuzzing de rutas con FFUF y resumen de rutas 200.
-- `recon_web.sh`: pipeline rápido con `whatweb`, `nuclei` y `feroxbuster`.
-- `subdomains_onprem_cloud.py`: clasificación Cloud/On-premise con enriquecimiento IP.
-- `nmap_scan.sh`: escaneo Nmap batch de dominios activos.
-- `nmap_batch_html_excel.py`: convierte XML de Nmap a reportes HTML/XLSX.
+## Included scripts
+- `dns_info_check.sh`: parallel DNS checks with CSV summary.
+- `whatweb_scan.py`: web technology detection with Excel export.
+- `ffuf_fuzzer.py`: FFUF path fuzzing with 200-status summary.
+- `recon_web.sh`: fast pipeline with `whatweb`, `nuclei`, and `feroxbuster`.
+- `subdomains_onprem_cloud.py`: Cloud/On-premise classification with IP enrichment.
+- `nmap_scan.sh`: batch Nmap scanning for active domains.
+- `nmap_batch_html_excel.py`: converts Nmap XML into HTML/XLSX reports.
 
-## Resumen rápido
-| Script | Entrada | Salida | Uso típico |
+## Quick summary
+| Script | Input | Output | Typical use |
 |---|---|---|---|
-| `dns_info_check.sh` | Lista de dominios | `.txt` por dominio + `dns_summary.csv` | Perfilado DNS y revisión AXFR |
-| `whatweb_scan.py` | Lista de hosts/URLs | Reportes `.txt` + `whatweb_summary.xlsx` | Fingerprinting tecnológico web |
-| `ffuf_fuzzer.py` | URLs + wordlist | JSON de FFUF + `summary.xlsx` | Descubrimiento de rutas y endpoints |
-| `recon_web.sh` | `urls.txt` | Archivos de `whatweb/nuclei/feroxbuster` | Recon web masivo en pipeline |
-| `subdomains_onprem_cloud.py` | `dominios.txt` | `resultados_dominios.xlsx` | Clasificación Cloud vs On-premise |
-| `nmap_scan.sh` | `urls.txt` | XML/GNMAP/NMAP + CSV estado | Escaneo Nmap por lotes |
-| `nmap_batch_html_excel.py` | XML o carpeta XML | `reporte.html` + `reporte.xlsx` | Presentación ejecutiva de vulnerabilidades |
+| `dns_info_check.sh` | Domain list | Per-domain `.txt` + `dns_summary.csv` | DNS profiling and AXFR review |
+| `whatweb_scan.py` | Host/URL list | `.txt` reports + `whatweb_summary.xlsx` | Web technology fingerprinting |
+| `ffuf_fuzzer.py` | URLs + wordlist | FFUF JSON + `summary.xlsx` | Endpoint/path discovery |
+| `recon_web.sh` | `urls.txt` | `whatweb/nuclei/feroxbuster` outputs | Bulk web recon pipeline |
+| `subdomains_onprem_cloud.py` | `dominios.txt` | `resultados_dominios.xlsx` | Cloud vs On-premise classification |
+| `nmap_scan.sh` | `urls.txt` | XML/GNMAP/NMAP + status CSV | Batch Nmap scanning |
+| `nmap_batch_html_excel.py` | XML file or XML folder | `reporte.html` + `reporte.xlsx` | Executive vulnerability reporting |
 
-## Requisitos
+## Requirements
 - Python 3.10+
 - `parallel`, `dig`, `curl`, `whatweb`, `ffuf`, `nmap`
-- Dependencias Python: `pip install -r requirements.txt`
+- Python dependencies: `pip install -r requirements.txt`
 
-## Uso
-1. Instala dependencias Python:
+## Usage
+1. Install Python dependencies:
    - `pip install -r requirements.txt`
-2. Prepara tus listas (`urls.txt`, `dominios.txt`) según el script.
-3. Ejecuta los scripts que necesites:
+2. Prepare your input lists (`urls.txt`, `dominios.txt`) based on each script.
+3. Run the scripts you need:
    - `bash dns_info_check.sh`
    - `python3 whatweb_scan.py`
    - `python3 ffuf_fuzzer.py`
    - `bash recon_web.sh`
    - `python3 subdomains_onprem_cloud.py`
    - `bash nmap_scan.sh`
-   - `python3 nmap_batch_html_excel.py <archivo.xml|directorio>`
-4. Revisa resultados en carpetas de salida y archivos `.xlsx`, `.csv` y `.html`.
+   - `python3 nmap_batch_html_excel.py <xml-file|directory>`
+4. Review outputs in generated folders and `.xlsx`, `.csv`, `.html` files.
 
-## Autor
-- Autor: **met4ll0f**
+## Author
+- Author: **met4ll0f**
 - GitHub: `https://github.com/aka-met4ll0f`
 
-## Aviso legal
-Usar solo con autorización del dueño del objetivo o en laboratorio/CTF. El creador no se hace responsable por el uso indebido.
+## Legal Notice
+Use only with explicit owner authorization or in a controlled lab/CTF. The creator is not responsible for misuse.
